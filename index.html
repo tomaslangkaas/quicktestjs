@@ -22,14 +22,27 @@
       <h3>
 <a id="quicktestjs" class="anchor" href="#quicktestjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quicktest.js</h3>
 
+<h4>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
+
 <pre><code>Quicktest(
-    'A few quick tests', //title of test suite, printed in the output
-    [ //alternating test code and expected results
-    4+2, 6,
-    2+2, 5
+    'A few quick tests',
+    [
+    4+2, 6, //test 1
+    2+2, 5  //test 2
     ], 
-    alert //where to output the results, defaults to console.log, if it exists
+    alert
 );
+</code></pre>
+
+<h4>
+<a id="example-output" class="anchor" href="#example-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example output</h4>
+
+<pre><code>A few quick tests
+=================
+
+- Fail (test 2): Expected 5, but got 4
+Of 2 tests, 1 passed and 1 failed.
 </code></pre>
 
       <footer class="site-footer">
